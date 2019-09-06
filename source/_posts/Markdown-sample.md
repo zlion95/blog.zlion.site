@@ -30,23 +30,23 @@ description: 这篇博文用来展示该博客能提供的 Markdown 特性。随
 
 ## 功能快捷键
 
-撤销：<kbd>Ctrl/Command</kbd> + <kbd>Z</kbd>
-重做：<kbd>Ctrl/Command</kbd> + <kbd>Y</kbd>
-加粗：<kbd>Ctrl/Command</kbd> + <kbd>B</kbd>
-斜体：<kbd>Ctrl/Command</kbd> + <kbd>I</kbd>
-标题：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd>
-无序列表：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd>
-有序列表：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd>
-检查列表：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>
-插入代码：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd>
-插入链接：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd>
-插入图片：<kbd>Ctrl/Command</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd>
+撤销：`Ctrl/Command` + `Z`
+重做：`Ctrl/Command` + `Y`
+加粗：`Ctrl/Command` + `B`
+斜体：`Ctrl/Command` + `I`
+标题：`Ctrl/Command` + `Shift` + `H`
+无序列表：`Ctrl/Command` + `Shift` + `U`
+有序列表：`Ctrl/Command` + `Shift` + `O`
+检查列表：`Ctrl/Command` + `Shift` + `C`
+插入代码：`Ctrl/Command` + `Shift` + `K`
+插入链接：`Ctrl/Command` + `Shift` + `L`
+插入图片：`Ctrl/Command` + `Shift` + `G`
 
 
 ## 合理的创建标题，有助于目录的生成
 
-直接输入1次<kbd>#</kbd>，并按下<kbd>space</kbd>后，将生成1级标题。
-输入2次<kbd>#</kbd>，并按下<kbd>space</kbd>后，将生成2级标题。
+直接输入1次`#`，并按下`space`后，将生成1级标题。
+输入2次`#`，并按下`space`后，将生成2级标题。
 以此类推，我们支持6级标题。有助于使用`TOC`语法后生成一个完美的目录。
 
 
@@ -109,6 +109,7 @@ var foo = 'bar';
 
 ## 创建一个表格
 一个简单的表格是这么创建的：
+
 项目     | Value
 -------- | -----
 电脑  | $1600
@@ -116,9 +117,11 @@ var foo = 'bar';
 导管  | $1
 
 ### 设定内容居中、居左、居右
+
 使用`:---------:`居中
 使用`:----------`居左
 使用`----------:`居右
+
 | 第一列       | 第二列         | 第三列        |
 |:-----------:| -------------:|:-------------|
 | 第一列文本居中 | 第二列文本居右  | 第三列文本居左 | 
@@ -126,6 +129,7 @@ var foo = 'bar';
 
 ### SmartyPants
 SmartyPants将ASCII标点字符转换为“智能”印刷标点HTML实体。例如：
+
 |    TYPE   |ASCII                          |HTML                         
 |----------------|-------------------------------|-----------------------------|
 |Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
