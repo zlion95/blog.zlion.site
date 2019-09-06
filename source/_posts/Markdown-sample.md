@@ -1,11 +1,13 @@
 ---
-title: sample
+title: Markdwon Sample
 date: 2019-09-06 13:00:41
 toc: true
 mermaid: true
 categories: Life
+mathjax2: true
 tags: 
 - test
+description: 这篇博文用来展示该博客能提供的 Markdown 特性。随时供自己确定如何使用Markdown编辑器。
 ---
 
 # 欢迎使用Markdown编辑器
@@ -61,9 +63,9 @@ tags:
 
 > 引用文本
 
-H~2~O is是液体。
+H<sub>2</sub>O is是液体。
 
-2^10^ 运算结果是 1024.
+2<sup>10</sup> 运算结果是 1024.
 
 
 
@@ -158,8 +160,8 @@ Markdown将文本转换为 HTML。
 
 您可以使用渲染LaTeX数学表达式 [KaTeX](https://khan.github.io/KaTeX/):
 
-Gamma公式展示 $\Gamma(n) = (n-1)!\quad\forall
-n\in\mathbb N$ 是通过欧拉积分
+Gamma公式展示 $$\Gamma(n) = (n-1)!\quad\forall
+n\in\mathbb N$$ 是通过欧拉积分
 
 $$
 \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
@@ -168,26 +170,10 @@ $$
 > 你可以找到更多关于的信息 **LaTeX** 数学表达式[here][1].
 
 
-## 新的甘特图功能，丰富你的文章
-
-```mermaid
-gantt
-        dateFormat  YYYY-MM-DD
-        title Adding GANTT diagram functionality to mermaid
-        section 现有任务
-        已完成               :done,    des1, 2014-01-06,2014-01-08
-        进行中               :active,  des2, 2014-01-09, 3d
-        计划一               :         des3, after des2, 5d
-        计划二               :         des4, after des3, 5d
-```
-- 关于 **甘特图** 语法，参考 [这儿][2],
-
 ## UML 图表
 
-可以使用UML图表进行渲染。 [Mermaid](https://mermaidjs.github.io/). 例如下面产生的一个序列图：:
-
-```mermaid
-sequenceDiagram
+### Sequence Diagram
+{% plantuml %}
 张三 ->> 李四: 你好！李四, 最近怎么样?
 李四-->>王五: 你最近怎么样，王五？
 李四--x 张三: 我很好，谢谢!
@@ -196,19 +182,37 @@ Note right of 王五: 李四想了很长时间, 文字太长了<br/>不适合放
 
 李四-->>张三: 打量着王五...
 张三->>王五: 很好... 王五, 你怎么样?
-```
+{% endplantuml %}
 
-这将产生一个流程图。:
+### Class Diagram
+{% plantuml %}
+    @startuml
+    Class01 <|-- Class02
+    Class03 *-- Class04
+    Class05 o-- Class06
+    Class07 .. Class08
+    Class09 -- Class10
+    @enduml
+{% endplantuml %}
 
-```mermaid
-graph LR
-A[长方形] -- 链接 --> B((圆))
-A --> C(圆角长方形)
-B --> D{菱形}
-C --> D
-```
+### Use Case Diagram
+{% plantuml %}
+    @startuml
+    (Usecase One)
+    (Usecase Two) as (UC2)
+    usecase UC3
+    usecase (Last\nusecase) as UC4
+    @enduml
+{% endplantuml %}
 
-- 关于 **Mermaid** 语法，参考 [这儿][3],
+### Activity Diagram
+{% plantuml %}
+    (*) -up-> "First Activity"
+    -right-> "Second Activity"
+    --> "Third Activity"
+    -left-> (*)
+{% endplantuml %}
+
 
 ## FLowchart流程图
 
