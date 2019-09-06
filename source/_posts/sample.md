@@ -213,8 +213,7 @@ C --> D
 ## FLowchart流程图
 
 我们依旧会支持flowchart的流程图：
-```mermaid
-flowchat
+```flow
 st=>start: 开始
 e=>end: 结束
 op=>operation: 我的操作
@@ -226,6 +225,15 @@ cond(no)->op
 ```
 
 - 关于 **Flowchart流程图** 语法，参考 [这儿][4].
+
+## sequence时序图
+
+```sequence
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
+- 关于 **sequence时序图** 语法，参考[这儿][5]
 
 
 ## 导出与导入
@@ -241,3 +249,4 @@ cond(no)->op
  [2]: https://mermaidjs.github.io/
  [3]: https://mermaidjs.github.io/
  [4]: http://adrai.github.io/flowchart.js/
+ [5]: https://github.com/bubkoo/hexo-filter-sequence
