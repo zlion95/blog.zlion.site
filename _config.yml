@@ -85,12 +85,6 @@ theme: maupassant
 # Mathematica supports
 mathjax2: true
 
-# mermaid chart
-#mermaid: ## mermaid url https://github.com/knsv/mermaid
-#  enable: true
-#  version: "8.0.0"
-#  options:  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
-#    startOnload: true  // default true
 
 # UML
 tag_plantuml:
@@ -110,6 +104,12 @@ sequence:
   options: 
     theme: 
     css_class: 
+
+markdown:
+  render:
+    html: true
+  plugins:
+    - markdown-it-footnote
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
