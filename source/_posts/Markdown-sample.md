@@ -2,7 +2,6 @@
 title: Markdwon Sample
 date: 2019-09-06 13:00:41
 toc: true
-mermaid: true
 categories: Life
 mathjax2: true
 tags: 

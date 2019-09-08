@@ -83,10 +83,12 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
   - links
 
 links:
-  - title: Github
+  - title: zlion的Github
     url: https://github.com/zlion95
-  - title: 知乎
+  - title: zlion的知乎
     url: https://www.zhihu.com/people/zu-dao-jun
+  - title: 红果果的博客
+    url: https://sycamore.fun
 
 timeline:
   - num: 1
